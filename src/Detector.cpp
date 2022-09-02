@@ -59,7 +59,7 @@ void Detector::start() {
   nh.param<string>("camera_info_topic", cameraInfoTopic,
                    cameraNamespace + "/camera_info");
   nh.param<string>("camera_image_topic", cameraImageTopic,
-                   cameraNamespace + "/image_rect_color");
+                   cameraNamespace + "/image_raw");
 
   if (referenceFrame.empty())
     referenceFrame = cameraFrame;
